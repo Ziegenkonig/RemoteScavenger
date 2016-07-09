@@ -89,11 +89,20 @@ public class WorkshopScreen implements Screen {
 		mouse.x = 50;
 		mouse.y = 16;
 		//Establishing blueprint console size
-		blueprintConsole = new Rectangle(200, 16, 96, 192);
+		blueprintConsole = new Rectangle((int)(Gdx.graphics.getWidth()*0.2),
+										 (int)(Gdx.graphics.getHeight()*0.03), 
+										 (int)(Gdx.graphics.getWidth()*0.09), 
+										 (int)(Gdx.graphics.getHeight()*0.37));
 		//Establishing parts station size
-		partsStation = new Rectangle(250+75, 16, 448, 224);
+		partsStation = new Rectangle((int)(Gdx.graphics.getWidth()*0.32), 
+									 (int)(Gdx.graphics.getHeight()*0.03), 
+									 (int)(Gdx.graphics.getWidth()*0.44), 
+									 (int)(Gdx.graphics.getHeight()*0.44));
 		//Establishing assembly table size
-		assemblyTable = new Rectangle(796, 16, 172, 172);
+		assemblyTable = new Rectangle((int)(Gdx.graphics.getWidth()*0.78), 
+									  (int)(Gdx.graphics.getHeight()*0.03), 
+									  (int)(Gdx.graphics.getWidth()*0.17), 
+									  (int)(Gdx.graphics.getHeight()*0.34));
 	}
 
 	@Override

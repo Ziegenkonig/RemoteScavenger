@@ -1,6 +1,7 @@
 package scavs;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -8,12 +9,18 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 
 import blueprints.Blueprints;
+import main.Tuple;
 
 public class Scav extends Rectangle{
 	private static final long serialVersionUID = 1L;
 	//Preview image for Scav
 	public Texture preview;
 	Blueprints blueprint;
+	
+	//Coordinates for where parts are located on the chassis view
+	//during assembly
+	LinkedList<Tuple> partCoords;
+	LinkedList<Integer> partSize;
 	
 	//Stats
 	int speed; // Pixels/Frame

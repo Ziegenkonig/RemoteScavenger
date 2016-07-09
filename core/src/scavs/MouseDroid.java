@@ -1,13 +1,20 @@
 package scavs;
 
+import java.util.LinkedList;
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 import blueprints.MouseScavBlueprint;
+import main.Tuple;
 
 //MouseDrois is a type of rectangle, that normally has a standardized height and width.
 //The height and width is allowed to be changed, however it must always be a perfect square.
+
+//Mouse droid is Mk I, which means that it can hold up to 4 optional components
+//on top of the already existing, mandatory set of parts; this sets a
+//definite size for the lists partCoords and partSizes
 
 public class MouseDroid extends Scav {
 	private static final long serialVersionUID = 1L;
@@ -58,6 +65,11 @@ public class MouseDroid extends Scav {
 		
 		//Setting which blueprint this scav is associated with
 		setBlueprint(new MouseScavBlueprint());
+		
+		//Instantiating the two linked lists that contain where the parts
+		//are located on the chassis view, as well as the size of said parts
+		partCoords = new LinkedList<Tuple>();
+		partSize = new LinkedList<Integer>();
 	}
 	
 	//move() returns a texture that is the current frame of one of the animation objects
