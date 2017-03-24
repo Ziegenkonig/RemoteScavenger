@@ -5,6 +5,8 @@ left over from a massive battle, where the player character has been living and 
 The player does not scavenge themselves, they build robotic scavengers of all shapes and sizes to explore and do
 the hard work for them.
 
+Most of the good stuff is in RemoteScavenger/core/src; all the current art is in RemoteScavenger/core/assets
+
 Things that are done right now:
  - 'Main Menu' screen
  - 'Workshop' screen
